@@ -4474,6 +4474,13 @@ progress {
         width: 50%
     }
 
+    .sm\:col-7 {
+        --grid-total: 12;
+        --grid-count: 7;
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
     .sm\:col-8 {
         --grid-total: 12;
         --grid-count: 8;
