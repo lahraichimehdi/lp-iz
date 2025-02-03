@@ -151,7 +151,7 @@
           <div
             class="position-absolute top-0 start-0 rotate-45"
             style="
-              top: 30% !important;
+              top: 22% !important;
               left: 18% !important;
               transform: scale(1);
               opacity: 1;
@@ -284,13 +284,13 @@
                     </div>
                     <div class="order-1 lg:order-0 col-12 sm:col-8">
                       <form
-                        class="vstack gap-2 p-2 sm:p-4 xl:p-6 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20"
+                        class="vstack gap-2 p-2 sm:p-2 xl:p-4 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20"
                       >
-                        <p
+                        <!-- <p
                           class="fs-6 text-dark dark:text-white text-opacity-70 mb-2"
                           >Have a question or feedback? Fill out the form below,
                           and we'll get back to you as soon as possible.</p
-                        >
+                        > -->
                         <div class="row child-cols-12 md:child-cols-6 g-2">
                           <div>
                             <input
@@ -345,147 +345,162 @@
       <!-- Section end -->
 
       <!-- Section start -->
-      <div id="faq" class="section panel overflow-hidden">
-        <div class="section-outer panel py-6 xl:py-9">
-          <div class="container max-w-lg">
+      <div id="faq" class="faq section panel">
+        <div class="section-outer panel py-6 xl:py-10">
+          <div class="container xl:max-w-xl">
             <div
               class="section-inner panel"
-              data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+              data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
-              <div class="panel" style="transform: translateY(0px); opacity: 1">
-                <h2 class="h4 sm:h3 lg:h2 m-0 text-center"
-                  >Frequenlty asked questions:</h2
-                >
-                <div
-                  class="panel mt-4 sm:mt-6 lg:mt-8 p-3 sm:p-4 xl:p-6 lg:max-w-750px xl:w-auto m-auto rounded-2 bg-secondary dark:bg-gray-800"
-                >
-                  <ul
-                    class="gap-4 uc-accordion"
-                    data-uc-accordion="targets: > li;"
+              <div
+                class="faq-inner panel row child-cols-12 lg:child-cols justify-between g-4"
+              >
+                <div class="lg:col-5">
+                  <div
+                    class="panel vstack items-start gap-2"
+                    data-uc-sticky="end: .faq-inner; offset: 50vh - 50%; media: @l;"
                   >
-                    <li class="uc-open">
-                      <a
-                        class="uc-accordion-title fs-5 sm:fs-4"
-                        href="page-features.html#"
-                        id="uc-accordion-23"
-                        role="button"
-                        aria-controls="uc-accordion-24"
-                        aria-expanded="true"
-                        aria-disabled="false"
-                        >Do I need to know about how to code?</a
-                      >
-                      <div
-                        class="uc-accordion-content"
-                        id="uc-accordion-24"
-                        role="region"
-                        aria-labelledby="uc-accordion-23"
-                      >
-                        <p
-                          >Yes, you need to have a fair amount of knowledge in
-                          dealing with HTML/CSS as well as JavaScript in order
-                          to be able to use Lexend.</p
+                    <div class="cstack gap-1 py-1 px-3 border rounded-pill">
+                      <span
+                        class="d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary"
+                      ></span>
+                      <span class="fs-8 fw-bold text-uppercase">FAQs</span>
+                    </div>
+                    <h2 class="h3 lg:h2 m-0">Frequenlty Asked Questions</h2>
+                    <p class="fs-6 lg:fs-5">
+                      We’re looking for people who share our vision! most of our
+                      time used to be taken up by most of who created new
+                      websites for thier businesses.
+                    </p>
+                    <a
+                      class="btn btn-sm lg:btn-md btn-primary px-3 mt-2"
+                      href="page-contact.html"
+                    >
+                      <span>Still have a question?</span>
+                      <i
+                        class="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="lg:col-6">
+                  <div class="panel">
+                    <ul
+                      class="gap-2"
+                      data-uc-accordion="targets: > li; multiple: true"
+                    >
+                      <li class="panel p-2 md:p-4 border rounded-1-5">
+                        <a
+                          class="uc-accordion-title fs-5 sm:fs-4 ltr:pe-4 rtl:ps-4"
+                          href="index.html#"
+                          >Do I need to know about how to code?</a
                         >
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        class="uc-accordion-title fs-5 sm:fs-4"
-                        href="page-features.html#"
-                        id="uc-accordion-25"
-                        role="button"
-                        aria-controls="uc-accordion-26"
-                        aria-expanded="false"
-                        aria-disabled="false"
-                        >Can I use it for commercial projects?</a
-                      >
-                      <div
-                        class="uc-accordion-content"
-                        hidden=""
-                        id="uc-accordion-26"
-                        role="region"
-                        aria-labelledby="uc-accordion-25"
-                      >
-                        <p
-                          >Feel free to do so. Lexend does exist to evolve every
-                          commercial project. You can also use it to build
-                          stunning websites for your own clients (we won’t
-                          breathe a word).</p
+                        <div class="uc-accordion-content">
+                          <p>
+                            Yes, you need to have a fair amount of knowledge in
+                            dealing with HTML/CSS as well as JavaScript in order
+                            to be able to use Inzone.
+                          </p>
+                        </div>
+                      </li>
+                      <li class="panel p-2 md:p-4 border rounded-1-5">
+                        <a
+                          class="uc-accordion-title fs-5 sm:fs-4 ltr:pe-4 rtl:ps-4"
+                          href="index.html#"
+                          >Can I use it for commercial projects?</a
                         >
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        class="uc-accordion-title fs-5 sm:fs-4"
-                        href="page-features.html#"
-                        id="uc-accordion-27"
-                        role="button"
-                        aria-controls="uc-accordion-28"
-                        aria-expanded="false"
-                        aria-disabled="false"
-                        >Can I use it for multiple projects?</a
-                      >
-                      <div
-                        class="uc-accordion-content"
-                        hidden=""
-                        id="uc-accordion-28"
-                        role="region"
-                        aria-labelledby="uc-accordion-27"
-                      >
-                        <p
-                          >Definitely! Please use it however you like; we don’t
-                          limit it.</p
+                        <div class="uc-accordion-content">
+                          <p>
+                            Feel free to do so. Inzone does exist to evolve
+                            every commercial project. You can also use it to
+                            build stunning websites for your own clients (we
+                            won’t breathe a word).
+                          </p>
+                        </div>
+                      </li>
+                      <li class="panel p-2 md:p-4 border rounded-1-5">
+                        <a
+                          class="uc-accordion-title fs-5 sm:fs-4 ltr:pe-4 rtl:ps-4"
+                          href="index.html#"
+                          >Can I use it for multiple projects?</a
                         >
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        class="uc-accordion-title fs-5 sm:fs-4"
-                        href="page-features.html#"
-                        id="uc-accordion-29"
-                        role="button"
-                        aria-controls="uc-accordion-30"
-                        aria-expanded="false"
-                        aria-disabled="false"
-                        >Can I use this to create and sell a product?</a
-                      >
-                      <div
-                        class="uc-accordion-content"
-                        hidden=""
-                        id="uc-accordion-30"
-                        role="region"
-                        aria-labelledby="uc-accordion-29"
-                      >
-                        <p>Do not ever consider doing it.</p>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        class="uc-accordion-title fs-5 sm:fs-4"
-                        href="page-features.html#"
-                        id="uc-accordion-31"
-                        role="button"
-                        aria-controls="uc-accordion-32"
-                        aria-expanded="false"
-                        aria-disabled="false"
-                        >What is your refund policy?</a
-                      >
-                      <div
-                        class="uc-accordion-content"
-                        hidden=""
-                        id="uc-accordion-32"
-                        role="region"
-                        aria-labelledby="uc-accordion-31"
-                      >
-                        <p
-                          >We understand the importance of customer satisfaction
-                          and we strive to provide the best products and
-                          services. However, please note that due to the nature
-                          of our products and services, we do not offer refunds
-                          after a purchase has been made.</p
+                        <div class="uc-accordion-content">
+                          <p>
+                            Definitely! Please use it however you like; we don’t
+                            limit it.
+                          </p>
+                        </div>
+                      </li>
+                      <li class="panel p-2 md:p-4 border rounded-1-5">
+                        <a
+                          class="uc-accordion-title fs-5 sm:fs-4 ltr:pe-4 rtl:ps-4"
+                          href="index.html#"
+                          >Can I use this to create and sell a product?</a
                         >
-                      </div>
-                    </li>
-                  </ul>
+                        <div class="uc-accordion-content">
+                          <p>Do not ever consider doing it.</p>
+                        </div>
+                      </li>
+                      <li class="panel p-2 md:p-4 border rounded-1-5">
+                        <a
+                          class="uc-accordion-title fs-5 sm:fs-4 ltr:pe-4 rtl:ps-4"
+                          href="index.html#"
+                          >What is your refund policy?</a
+                        >
+                        <div class="uc-accordion-content">
+                          <p>
+                            We understand the importance of customer
+                            satisfaction and we strive to provide the best
+                            products and services. However, please note that due
+                            to the nature of our products and services, we do
+                            not offer refunds after a purchase has been made.
+                          </p>
+                        </div>
+                      </li>
+                      <li class="panel p-2 md:p-4 border rounded-1-5">
+                        <a
+                          class="uc-accordion-title fs-5 sm:fs-4 ltr:pe-4 rtl:ps-4"
+                          href="index.html#"
+                          >Do I need to know about how to code?</a
+                        >
+                        <div class="uc-accordion-content">
+                          <p>
+                            Yes, you need to have a fair amount of knowledge in
+                            dealing with HTML/CSS as well as JavaScript in order
+                            to be able to use Inzone.
+                          </p>
+                        </div>
+                      </li>
+                      <li class="panel p-2 md:p-4 border rounded-1-5">
+                        <a
+                          class="uc-accordion-title fs-5 sm:fs-4 ltr:pe-4 rtl:ps-4"
+                          href="index.html#"
+                          >Can I use it for commercial projects?</a
+                        >
+                        <div class="uc-accordion-content">
+                          <p>
+                            Feel free to do so. Inzone does exist to evolve
+                            every commercial project. You can also use it to
+                            build stunning websites for your own clients (we
+                            won’t breathe a word).
+                          </p>
+                        </div>
+                      </li>
+                      <li class="panel p-2 md:p-4 border rounded-1-5">
+                        <a
+                          class="uc-accordion-title fs-5 sm:fs-4 ltr:pe-4 rtl:ps-4"
+                          href="index.html#"
+                          >Can I use it for multiple projects?</a
+                        >
+                        <div class="uc-accordion-content">
+                          <p>
+                            Definitely! Please use it however you like; we don’t
+                            limit it.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
