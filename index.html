@@ -152,871 +152,6 @@
       </div>
     </div>
 
-    <!--  Search modal -->
-    <div
-      id="uc-search-modal"
-      class="uc-modal-full uc-modal"
-      data-uc-modal="overlay: true"
-    >
-      <div
-        class="uc-modal-dialog d-flex justify-center bg-white text-dark dark:bg-gray-900 dark:text-white"
-        data-uc-height-viewport=""
-      >
-        <div class="uc-modal-close-full m-1 p-0 vstack gap-narrow text-center">
-          <button
-            class="icon-3 btn btn-md btn-dark dark:bg-white dark:text-dark w-24px sm:w-32px h-24px sm:h-32px rounded-circle flex-1"
-            type="button"
-          >
-            <i class="unicon-close"></i>
-          </button>
-          <span class="ft-tertiary fs-7">ESC</span>
-        </div>
-
-        <div class="panel w-100 sm:w-500px px-2 py-10">
-          <h3 class="h4 sm:h2 text-center">What are you looking for?</h3>
-          <form
-            class="hstack gap-1 mt-4 border-bottom p-narrow dark:border-gray-700"
-            action="?"
-          >
-            <span
-              class="d-inline-flex justify-center items-center w-24px sm:w-40 h-24px sm:h-40px opacity-50"
-              ><i class="unicon-search icon-3"></i
-            ></span>
-            <input
-              type="search"
-              name="q"
-              class="form-control-plaintext ms-1 fs-6 sm:fs-5 w-full dark:text-white"
-              placeholder="Type your keyword.."
-              aria-label="Search"
-              autofocus
-            />
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!--  Newsletter modal -->
-    <div id="uc-newsletter-modal" data-uc-modal="overlay: true">
-      <div
-        class="uc-modal-dialog w-800px bg-white text-dark dark:bg-gray-900 dark:text-white rounded-3 p-1 overflow-hidden"
-      >
-        <button
-          class="uc-modal-close-default p-0 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all"
-          type="button"
-        >
-          <i class="unicon-close"></i>
-        </button>
-        <div class="row md:child-cols-6 col-match g-0">
-          <div class="d-none md:d-flex">
-            <div
-              class="position-relative w-100 ratio-1x1 rounded-2 overflow-hidden"
-            >
-              <img
-                class="media-cover"
-                src="./assets/images/common/newsletter.jpg"
-                alt="Newsletter image"
-              />
-            </div>
-          </div>
-          <div>
-            <div class="panel vstack self-center p-4 md:py-8 text-center">
-              <h3 class="h3 md:h2">Subscribe to our Newsletter</h3>
-              <p class="ft-tertiary">
-                Join 10k+ people to get notified about new posts, news and
-                updates.
-              </p>
-              <div class="panel mt-2 lg:mt-4">
-                <form class="vstack gap-1">
-                  <input
-                    type="email"
-                    class="form-control form-control-sm w-full fs-6 bg-white dark:border-white dark:border-gray-700"
-                    placeholder="Your email address.."
-                  />
-                  <button type="submit" class="btn btn-sm btn-primary">
-                    Sign up
-                  </button>
-                </form>
-                <p class="fs-7 mt-2">Do not worry we don't spam!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  Acccount modal -->
-    <div id="uc-account-modal" data-uc-modal="overlay: true">
-      <div
-        class="uc-modal-dialog lg:max-w-500px bg-secondary text-dark dark:bg-gray-800 dark:text-white rounded"
-      >
-        <button
-          class="uc-modal-close-default top-0 ltr:end-0 rtl:start-0 rtl:end-auto m-2 p-0 border-0 icon-2 lg:icon-3 btn btn-md dark:text-white transition-transform duration-150 hover:rotate-90"
-          type="button"
-        >
-          <i class="unicon-close"></i>
-        </button>
-
-        <div class="panel vstack gap-2 md:gap-4 text-center">
-          <ul
-            class="account-tabs-nav nav-x justify-center h6 py-2 border-bottom d-none"
-            data-uc-switcher="animation: uc-animation-slide-bottom-small, uc-animation-slide-top-small"
-          >
-            <li><a href="index.html#">Sign in</a></li>
-            <li><a href="index.html#">Sign up</a></li>
-            <li><a href="index.html#">Reset password</a></li>
-            <li><a href="index.html#">Terms of use</a></li>
-          </ul>
-          <div
-            class="account-tabs-content uc-switcher px-3 lg:px-4 py-4 lg:py-8 m-0 lg:mx-auto vstack justify-center items-center"
-          >
-            <div class="w-100">
-              <div
-                class="panel vstack justify-center items-center gap-2 sm:gap-4 text-center"
-              >
-                <h4 class="h5 lg:h4 m-0">Log in</h4>
-                <div class="panel vstack gap-4 w-100 sm:w-350px mx-auto">
-                  <form class="vstack gap-2">
-                    <input
-                      class="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                      type="email"
-                      placeholder="Your email"
-                      required
-                    />
-                    <input
-                      class="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                      type="password"
-                      placeholder="Password"
-                      required
-                    />
-                    <div class="hstack justify-between items-start text-start">
-                      <div class="form-check text-start rtl:text-end">
-                        <input
-                          class="form-check-input rounded-0 dark:bg-gray-900 dark:text-white dark:border-gray-700"
-                          type="checkbox"
-                          id="inputCheckRemember"
-                        />
-                        <label
-                          class="hstack justify-between form-check-label fs-7 sm:fs-6"
-                          for="inputCheckRemember"
-                          >Remember me?</label
-                        >
-                      </div>
-                      <a
-                        href="index.html#"
-                        class="uc-link"
-                        data-uc-switcher-item="2"
-                        >Forgot password</a
-                      >
-                    </div>
-                    <button
-                      class="btn btn-primary btn-md text-white lg:mt-2"
-                      type="submit"
-                    >
-                      Log in
-                    </button>
-                  </form>
-                  <div class="panel">
-                    <hr class="m-0" />
-                    <span
-                      class="position-absolute top-50 start-50 translate-middle p-1 fs-7 text-uppercase bg-white dark:bg-gray-800"
-                      >Or</span
-                    >
-                  </div>
-                  <div class="hstack gap-2">
-                    <a
-                      href="index.html#google"
-                      class="hstack items-center justify-center flex-1 gap-1 h-48px text-none rounded border border-gray-900 dark:border-white border-opacity-10"
-                    >
-                      <i class="icon icon-1 unicon-logo-google"></i>
-                    </a>
-                    <a
-                      href="index.html#facebook"
-                      class="hstack items-center justify-center flex-1 gap-1 h-48px text-none rounded border border-gray-900 dark:border-white border-opacity-10"
-                    >
-                      <i class="icon icon-1 unicon-logo-facebook"></i>
-                    </a>
-                    <a
-                      href="index.html#x"
-                      class="hstack items-center justify-center flex-1 gap-1 h-48px text-none rounded border border-gray-900 dark:border-white border-opacity-10"
-                    >
-                      <i class="icon icon-1 unicon-logo-x-filled"></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="fs-7 sm:fs-6">
-                  Have no account yet?
-                  <a
-                    class="uc-link"
-                    href="index.html#"
-                    data-uc-switcher-item="1"
-                    >Sign up</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="w-100">
-              <div
-                class="panel vstack justify-center items-center gap-2 sm:gap-4 text-center"
-              >
-                <h4 class="h5 lg:h4 m-0">Create an account</h4>
-                <div class="panel vstack gap-4 w-100 sm:w-350px mx-auto">
-                  <form class="vstack gap-2">
-                    <input
-                      class="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                      type="text"
-                      placeholder="Full name"
-                      required
-                    />
-                    <input
-                      class="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                      type="email"
-                      placeholder="Your email"
-                      required
-                    />
-                    <input
-                      class="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                      type="password"
-                      placeholder="Password"
-                      required
-                    />
-                    <input
-                      class="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                      type="password"
-                      placeholder="Re-enter Password"
-                      required
-                    />
-                    <div class="hstack text-start">
-                      <div class="form-check text-start rtl:text-end">
-                        <input
-                          class="form-check-input rounded-0 dark:bg-gray-900 dark:text-white dark:border-gray-700"
-                          type="checkbox"
-                          required
-                        />
-                        <label
-                          class="hstack justify-between form-check-label fs-7 sm:fs-6"
-                          >I read and accept the
-                          <a
-                            href="index.html#"
-                            class="uc-link ltr:ms-narrow rtl:me-narrow"
-                            data-uc-switcher-item="3"
-                            >terms of use</a
-                          >.
-                        </label>
-                      </div>
-                    </div>
-                    <button
-                      class="btn btn-primary btn-md text-white lg:mt-2"
-                      type="submit"
-                    >
-                      Sign up
-                    </button>
-                  </form>
-                  <div class="panel">
-                    <hr class="m-0" />
-                    <span
-                      class="position-absolute top-50 start-50 translate-middle p-1 fs-7 text-uppercase bg-white dark:bg-gray-800"
-                      >Or</span
-                    >
-                  </div>
-                  <div class="hstack gap-2">
-                    <a
-                      href="index.html#google"
-                      class="hstack items-center justify-center flex-1 gap-1 h-48px text-none rounded border border-gray-900 dark:border-white border-opacity-10"
-                    >
-                      <i class="icon icon-1 unicon-logo-google"></i>
-                    </a>
-                    <a
-                      href="index.html#facebook"
-                      class="hstack items-center justify-center flex-1 gap-1 h-48px text-none rounded border border-gray-900 dark:border-white border-opacity-10"
-                    >
-                      <i class="icon icon-1 unicon-logo-facebook"></i>
-                    </a>
-                    <a
-                      href="index.html#x"
-                      class="hstack items-center justify-center flex-1 gap-1 h-48px text-none rounded border border-gray-900 dark:border-white border-opacity-10"
-                    >
-                      <i class="icon icon-1 unicon-logo-x-filled"></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="fs-7 sm:fs-6">
-                  Already have an account?
-                  <a
-                    class="uc-link"
-                    href="index.html#"
-                    data-uc-switcher-item="0"
-                    >Log in</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="w-100">
-              <div
-                class="panel vstack justify-center items-center gap-2 sm:gap-4 text-center"
-              >
-                <h4 class="h5 lg:h4 m-0">Reset password</h4>
-                <div class="panel w-100 sm:w-350px">
-                  <form class="vstack gap-2">
-                    <input
-                      class="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                      type="email"
-                      placeholder="Your email"
-                      required
-                    />
-                    <div class="form-check text-start rtl:text-end">
-                      <input
-                        class="form-check-input rounded-0 dark:bg-gray-900 dark:text-white dark:border-gray-700"
-                        type="checkbox"
-                        id="inputCheckVerify"
-                        required
-                      />
-                      <label
-                        class="form-check-label fs-7 sm:fs-6"
-                        for="inputCheckVerify"
-                      >
-                        <span>I'm not a robot</span>.
-                      </label>
-                    </div>
-                    <button
-                      class="btn btn-primary btn-md text-white lg:mt-2"
-                      type="submit"
-                    >
-                      Reset a password
-                    </button>
-                  </form>
-                </div>
-                <p class="fs-7 sm:fs-6 mt-2 sm:m-0">
-                  Remember your password?
-                  <a
-                    class="uc-link"
-                    href="index.html#"
-                    data-uc-switcher-item="0"
-                    >Log in</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="w-100">
-              <div
-                class="panel vstack justify-center items-center gap-2 sm:gap-4"
-              >
-                <h4 class="h5 lg:h4 m-0">Terms of use</h4>
-                <div
-                  class="page-content panel fs-6 text-start max-h-400px overflow-scroll"
-                >
-                  <p>
-                    Terms of use dolor sit amet consectetur, adipisicing elit.
-                    Recusandae provident ullam aperiam quo ad non corrupti sit
-                    vel quam repellat ipsa quod sed, repellendus adipisci,
-                    ducimus ea modi odio assumenda.
-                  </p>
-                  <h5 class="h6 md:h5 mt-3 mb-1">Disclaimers</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi, cum esse possimus officiis amet ea voluptatibus
-                    libero! Dolorum assumenda esse, deserunt ipsum ad iusto!
-                    Praesentium error nobis tenetur at, quis nostrum facere
-                    excepturi architecto totam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore, soluta alias eaque modi ipsum sint iusto fugiat
-                    vero velit rerum.
-                  </p>
-                  <h5 class="h6 md:h5 mt-3 mb-1">Limitation on Liability</h5>
-                  <p>
-                    Sequi, cum esse possimus officiis amet ea voluptatibus
-                    libero! Dolorum assumenda esse, deserunt ipsum ad iusto!
-                    Praesentium error nobis tenetur at, quis nostrum facere
-                    excepturi architecto totam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore, soluta alias eaque modi ipsum sint iusto fugiat
-                    vero velit rerum.
-                  </p>
-                  <h5 class="h6 md:h5 mt-3 mb-1">Copyright Policy</h5>
-                  <p>
-                    Dolor sit amet consectetur adipisicing elit. Sequi, cum esse
-                    possimus officiis amet ea voluptatibus libero! Dolorum
-                    assumenda esse, deserunt ipsum ad iusto! Praesentium error
-                    nobis tenetur at, quis nostrum facere excepturi architecto
-                    totam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore, soluta alias eaque modi ipsum sint iusto fugiat
-                    vero velit rerum.
-                  </p>
-                  <h5 class="h6 md:h5 mt-3 mb-1">General</h5>
-                  <p>
-                    Sit amet consectetur adipisicing elit. Sequi, cum esse
-                    possimus officiis amet ea voluptatibus libero! Dolorum
-                    assumenda esse, deserunt ipsum ad iusto! Praesentium error
-                    nobis tenetur at, quis nostrum facere excepturi architecto
-                    totam.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore, soluta alias eaque modi ipsum sint iusto fugiat
-                    vero velit rerum.
-                  </p>
-                </div>
-                <p class="fs-7 sm:fs-6">
-                  Do you agree to our terms?
-                  <a
-                    class="uc-link"
-                    href="index.html#"
-                    data-uc-switcher-item="1"
-                    >Sign up</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  Menu panel -->
-    <div id="uc-menu-panel" data-uc-offcanvas="overlay: true;">
-      <div
-        class="uc-offcanvas-bar bg-white text-dark dark:bg-gray-900 dark:text-white"
-      >
-        <header
-          class="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900"
-        >
-          <div class="uc-logo">
-            <a
-              class="h5 text-none text-gray-900 dark:text-white"
-              href="index.html"
-            >
-              <img
-                class="w-32px"
-                src="./assets/images/common/logo-icon.png"
-                alt="Inzone"
-              />
-            </a>
-          </div>
-          <button
-            class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all"
-            type="button"
-          >
-            <i class="unicon-close"></i>
-          </button>
-        </header>
-
-        <div class="panel">
-          <!-- <form
-            id="search-panel"
-            class="form-icon-group vstack gap-1 mb-2"
-            data-uc-sticky=""
-          >
-            <input
-              type="email"
-              class="form-control form-control-sm fs-7 rounded-default"
-              placeholder="Search.."
-            />
-            <span class="form-icon text-gray">
-              <i class="unicon-search icon-1"></i>
-            </span>
-          </form> -->
-          <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav="">
-            <li>
-              <a href="index.html#features">Features</a>
-            </li>
-            <li>
-              <a href="index.html#how_it_works">How it works</a>
-            </li>
-            <li><a href="index.html#pricing">Pricing</a></li>
-            <li><a href="index.html#clients_feedback">Reviews</a></li>
-            <li><a href="index.html#insights">Insights</a></li>
-            <li class="hr opacity-10 my-1"></li>
-            <!-- <li><a href="sign-up.html">Create an account</a></li> -->
-            <li><a href="sign-in.html">Log in</a></li>
-            <li>
-              <a
-                href="https://themeforest.net/item/Inzone-software-saas-startup-html5-template/51596504"
-                >Buy Template</a
-              >
-            </li>
-          </ul>
-          <ul class="social-icons nav-x mt-4">
-            <li>
-              <a href="index.html#"
-                ><i class="unicon-logo-medium icon-2"></i
-              ></a>
-              <a href="index.html#"
-                ><i class="unicon-logo-x-filled icon-2"></i
-              ></a>
-              <a href="index.html#"
-                ><i class="unicon-logo-instagram icon-2"></i
-              ></a>
-              <a href="index.html#"
-                ><i class="unicon-logo-pinterest icon-2"></i
-              ></a>
-            </li>
-          </ul>
-          <div
-            class="py-2 hstack gap-2 mt-4 bg-white dark:bg-gray-900"
-            data-uc-sticky="position: bottom"
-          >
-            <div class="vstack gap-1">
-              <span class="fs-7 opacity-60">Select theme:</span>
-              <div class="darkmode-trigger" data-darkmode-switch="">
-                <label class="switch">
-                  <input type="checkbox" />
-                  <span class="slider fs-5"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  Cart panel -->
-    <div id="uc-cart-panel" data-uc-offcanvas="overlay: true; flip: true;">
-      <div
-        class="uc-offcanvas-bar bg-white text-dark dark:bg-gray-900 dark:text-white"
-      >
-        <button
-          class="uc-offcanvas-close top-0 ltr:end-0 rtl:start-0 rtl:end-auto m-2 p-0 border-0 icon-2 lg:icon-3 btn btn-md dark:text-white transition-transform duration-150 hover:rotate-90"
-          type="button"
-        >
-          <i class="unicon-close"></i>
-        </button>
-
-        <div class="mini-cart-content vstack justify-between panel h-100">
-          <div class="mini-cart-header">
-            <h3 class="title h5 m-0 text-dark dark:bg-gray-900">
-              Shopping cart
-            </h3>
-          </div>
-          <div class="mini-cart-listing panel flex-1 my-4 overflow-scroll">
-            <p class="alert alert-warning" hidden>Your cart empty!</p>
-            <div class="panel vstack gap-3">
-              <div>
-                <article class="product type-product panel">
-                  <div class="hstack gap-2">
-                    <figure
-                      class="featured-image m-0 rounded ratio ratio-1x1 w-80px uc-transition-toggle overflow-hidden"
-                    >
-                      <img
-                        class="media-cover image uc-transition-scale-up uc-transition-opaque"
-                        src="./assets/images/common/products/img-07.jpg"
-                        alt="Laptop Cover"
-                      />
-                      <a
-                        class="position-cover"
-                        data-caption="Laptop Cover"
-                        href="shop-product-detail.html"
-                      ></a>
-                    </figure>
-                    <div class="content vstack gap-narrow fs-6">
-                      <h5 class="h6 m-0">
-                        <a
-                          class="text-none text-dark dark:text-white"
-                          href="shop-product-detail.html"
-                          >Laptop Cover</a
-                        >
-                      </h5>
-                      <div
-                        class="hstack gap-narrow fs-7 opacity-50 text-dark dark:text-white"
-                      >
-                        <span class="qty">1</span> x
-                        <span class="price">$24.00</span>
-                      </div>
-                      <a
-                        href="index.html#remove_from_cart"
-                        class="remove fs-7 text-dark dark:text-white"
-                        >Remove</a
-                      >
-                    </div>
-                    <a
-                      href="index.html#remove_from_cart"
-                      class="remove position-absolute top-0 end-0 btn p-0 hover:text-danger"
-                      hidden
-                    >
-                      <i class="unicon-close icon-1"></i>
-                    </a>
-                  </div>
-                </article>
-              </div>
-              <div>
-                <article class="product type-product panel">
-                  <div class="hstack gap-2">
-                    <figure
-                      class="featured-image m-0 rounded ratio ratio-1x1 w-80px uc-transition-toggle overflow-hidden"
-                    >
-                      <img
-                        class="media-cover image uc-transition-scale-up uc-transition-opaque"
-                        src="./assets/images/common/products/img-08.jpg"
-                        alt="Disney Toys"
-                      />
-                      <a
-                        class="position-cover"
-                        data-caption="Disney Toys"
-                        href="shop-product-detail.html"
-                      ></a>
-                    </figure>
-                    <div class="content vstack gap-narrow fs-6">
-                      <h5 class="h6 m-0">
-                        <a
-                          class="text-none text-dark dark:text-white"
-                          href="shop-product-detail.html"
-                          >Disney Toys</a
-                        >
-                      </h5>
-                      <div
-                        class="hstack gap-narrow fs-7 opacity-50 text-dark dark:text-white"
-                      >
-                        <span class="qty">1</span> x
-                        <span class="price">$5.00</span>
-                      </div>
-                      <a
-                        href="index.html#remove_from_cart"
-                        class="remove fs-7 text-dark dark:text-white"
-                        >Remove</a
-                      >
-                    </div>
-                    <a
-                      href="index.html#remove_from_cart"
-                      class="remove position-absolute top-0 end-0 btn p-0 hover:text-danger"
-                      hidden
-                    >
-                      <i class="unicon-close icon-1"></i>
-                    </a>
-                  </div>
-                </article>
-              </div>
-              <div>
-                <article class="product type-product panel">
-                  <div class="hstack gap-2">
-                    <figure
-                      class="featured-image m-0 rounded ratio ratio-1x1 w-80px uc-transition-toggle overflow-hidden"
-                    >
-                      <img
-                        class="media-cover image uc-transition-scale-up uc-transition-opaque"
-                        src="./assets/images/common/products/img-09.jpg"
-                        alt="Screen Axe"
-                      />
-                      <a
-                        class="position-cover"
-                        data-caption="Screen Axe"
-                        href="shop-product-detail.html"
-                      ></a>
-                    </figure>
-                    <div class="content vstack gap-narrow fs-6">
-                      <h5 class="h6 m-0">
-                        <a
-                          class="text-none text-dark dark:text-white"
-                          href="shop-product-detail.html"
-                          >Screen Axe</a
-                        >
-                      </h5>
-                      <div
-                        class="hstack gap-narrow fs-7 opacity-50 text-dark dark:text-white"
-                      >
-                        <span class="qty">1</span> x
-                        <span class="price">$19.00</span>
-                      </div>
-                      <a
-                        href="index.html#remove_from_cart"
-                        class="remove fs-7 text-dark dark:text-white"
-                        >Remove</a
-                      >
-                    </div>
-                    <a
-                      href="index.html#remove_from_cart"
-                      class="remove position-absolute top-0 end-0 btn p-0 hover:text-danger"
-                      hidden
-                    >
-                      <i class="unicon-close icon-1"></i>
-                    </a>
-                  </div>
-                </article>
-              </div>
-              <div>
-                <article class="product type-product panel">
-                  <div class="hstack gap-2">
-                    <figure
-                      class="featured-image m-0 rounded ratio ratio-1x1 w-80px uc-transition-toggle overflow-hidden"
-                    >
-                      <img
-                        class="media-cover image uc-transition-scale-up uc-transition-opaque"
-                        src="./assets/images/common/products/img-10.jpg"
-                        alt="Airpods Pro"
-                      />
-                      <a
-                        class="position-cover"
-                        data-caption="Airpods Pro"
-                        href="shop-product-detail.html"
-                      ></a>
-                    </figure>
-                    <div class="content vstack gap-narrow fs-6">
-                      <h5 class="h6 m-0">
-                        <a
-                          class="text-none text-dark dark:text-white"
-                          href="shop-product-detail.html"
-                          >Airpods Pro</a
-                        >
-                      </h5>
-                      <div
-                        class="hstack gap-narrow fs-7 opacity-50 text-dark dark:text-white"
-                      >
-                        <span class="qty">1</span> x
-                        <span class="price">$49.00</span>
-                      </div>
-                      <a
-                        href="index.html#remove_from_cart"
-                        class="remove fs-7 text-dark dark:text-white"
-                        >Remove</a
-                      >
-                    </div>
-                    <a
-                      href="index.html#remove_from_cart"
-                      class="remove position-absolute top-0 end-0 btn p-0 hover:text-danger"
-                      hidden
-                    >
-                      <i class="unicon-close icon-1"></i>
-                    </a>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="mini-cart-footer panel pt-3 border-top">
-            <div class="panel vstack gap-3 justify-between">
-              <div class="mini-cart-total hstack justify-between">
-                <h5 class="h5 m-0 text-dark dark:text-white">Subtotal</h5>
-                <b class="fs-5">$97.00</b>
-              </div>
-              <div class="mini-cart-actions vstack gap-1">
-                <a
-                  class="btn btn-md btn-outline-gray-100 text-dark dark:text-white dark:border-gray-700 dark:hover:bg-gray-700"
-                  href="shop-cart.html"
-                  >View cart</a
-                >
-                <a
-                  class="btn btn-md btn-primary text-white"
-                  href="shop-checkout.html"
-                  >Checkout</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  Favorites modal -->
-    <div id="uc-favorites-panel" data-uc-modal="overlay: true">
-      <div
-        class="uc-modal-dialog lg:max-w-500px bg-white text-dark dark:bg-gray-800 dark:text-white rounded"
-      >
-        <button
-          class="uc-modal-close-default top-0 ltr:end-0 rtl:start-0 rtl:end-auto m-2 p-0 border-0 icon-2 lg:icon-3 btn btn-md dark:text-white transition-transform duration-150 hover:rotate-90"
-          type="button"
-        >
-          <i class="unicon-close"></i>
-        </button>
-
-        <div
-          class="panel vstack justify-center items-center gap-2 text-center py-8"
-        >
-          <i
-            class="icon icon-4 unicon-bookmark mb-2 text-primary dark:text-white"
-          ></i>
-          <h2 class="h4 md:h3 m-0">Your favorites</h2>
-          <p class="fs-5 opacity-60">
-            You have not yet added any recipe to your favorites list.
-          </p>
-          <a
-            href="index.html#"
-            class="btn btn-md btn-outline-gray-100 text-dark dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 mt-2 uc-modal-close"
-            >Browse recipes</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <!--  Contact modal -->
-    <div id="uc-contact-modal" data-uc-modal="overlay: true">
-      <div
-        class="uc-modal-dialog lg:max-w-650px bg-secondary text-dark dark:bg-gray-800 dark:text-white rounded-1-5"
-      >
-        <button
-          class="uc-modal-close-default top-0 ltr:end-0 rtl:start-0 rtl:end-auto m-2 p-0 border-0 icon-2 lg:icon-3 btn btn-md dark:text-white transition-transform duration-150 hover:rotate-90"
-          type="button"
-        >
-          <i class="unicon-close"></i>
-        </button>
-
-        <div class="panel vstack gap-2 md:gap-4 text-center">
-          <div class="panel cstack px-3 md:px-4 py-4 md:py-8 m-0 lg:mx-auto">
-            <div
-              class="panel vstack justify-center items-center gap-2 sm:gap-4 text-center"
-            >
-              <h4 class="h5 lg:h4 m-0">Schedule your 15-minute demo now</h4>
-              <div class="panel w-100 sm:w-350px md:w-500px mx-auto">
-                <form class="vstack gap-2">
-                  <div class="vstack lg:hstack gap-2">
-                    <input
-                      class="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
-                      type="text"
-                      placeholder="Full name*"
-                      required
-                    />
-                    <input
-                      class="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
-                      type="text"
-                      placeholder="Last name*"
-                      required
-                    />
-                  </div>
-                  <div class="vstack lg:hstack gap-2">
-                    <input
-                      class="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
-                      type="email"
-                      placeholder="Your email*"
-                      required
-                    />
-                    <input
-                      class="form-control h-48px w-100 md:w-1/2 rtl:text-end bg-white dark:border-white dark:text-dark"
-                      type="tel"
-                      placeholder="Phone number*"
-                      required
-                    />
-                  </div>
-                  <input
-                    class="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                    type="text"
-                    placeholder="Company name*"
-                    required
-                  />
-                  <textarea
-                    class="form-control min-h-150px w-full bg-white dark:border-white dark:text-dark"
-                    placeholder="Your message.."
-                  ></textarea>
-                  <button
-                    class="btn btn-primary btn-md text-white mt-2"
-                    type="submit"
-                  >
-                    Schedule my demo
-                  </button>
-                  <p class="fs-7 opacity-70 mt-2 text-center">
-                    We’ll tailor your demo to your immediate needs and answer
-                    all your questions. Get ready to see how it works!
-                  </p>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!--  Bottom Actions Sticky -->
     <div class="backtotop-wrap position-fixed bottom-0 end-0 z-99 m-2 vstack">
       <div
@@ -1073,12 +208,834 @@
                     <a href="index.html#overview">Overview</a>
                   </li>
                   <li>
+                    <a href="#" role="button" aria-haspopup="true">
+                      Products
+                      <span
+                        data-uc-navbar-parent-icon=""
+                        class="uc-icon uc-navbar-parent-icon"
+                      >
+                      </span>
+                    </a>
+                    <div
+                      class="uc-navbar-dropdown w-600px ft-primary text-unset fs-6 fw-normal p-0 hide-scrollbar rounded-2 overflow-hidden uc-drop"
+                      data-uc-drop="mode: click; offset: 0; boundary: !.uc-navbar; animation: uc-animation-slide-top-small; duration: 150;"
+                    >
+                      <div
+                        class="row child-cols-6 g-0 col-match uc-grid uc-grid-stack"
+                        data-uc-grid=""
+                      >
+                        <div>
+                          <ul class="uc-nav uc-navbar-dropdown-nav p-2">
+                            <li>
+                              <a
+                                class="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                                href="features.html"
+                              >
+                                <!-- <i
+                                  class="icon-1 unicon-checkmark fw-bold text-primary dark:text-secondary"
+                                ></i> -->
+                                <svg
+                                  width="140.269"
+                                  height="67.08"
+                                  viewBox="0 0 140.269 67.08"
+                                >
+                                  <path
+                                    id="Path_765"
+                                    data-name="Path 765"
+                                    d="M328.166,267.88h-34.4v-.709h-15.6v.709H243.637a2.327,2.327,0,0,0-2.327,2.327h0v47.1a2.327,2.327,0,0,0,2.327,2.327h84.529a2.327,2.327,0,0,0,2.327-2.327v-47.1a2.327,2.327,0,0,0-2.327-2.326Z"
+                                    transform="translate(-218.596 -257.801)"
+                                    fill="#3f3d56"
+                                  />
+                                  <rect
+                                    id="Rectangle_125"
+                                    data-name="Rectangle 125"
+                                    width="82.944"
+                                    height="46.789"
+                                    transform="translate(25.834 14.19)"
+                                    fill="#e6e6e6"
+                                  />
+                                  <rect
+                                    id="Rectangle_130"
+                                    data-name="Rectangle 130"
+                                    width="75.937"
+                                    height="40.443"
+                                    transform="translate(29.351 16.664)"
+                                    fill="#fff"
+                                  />
+                                  <circle
+                                    id="Ellipse_120"
+                                    data-name="Ellipse 120"
+                                    cx="0.851"
+                                    cy="0.851"
+                                    r="0.851"
+                                    transform="translate(66.384 11.212)"
+                                    fill="#4b33f7"
+                                  />
+                                  <path
+                                    id="Path_766"
+                                    data-name="Path 766"
+                                    d="M309.556,646.523h-8.095v-.583a.116.116,0,0,0-.116-.116H298.57a.116.116,0,0,0-.116.116h0v.583H296.72v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583h-1.735v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583h-1.735v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583H282.5v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583h-1.735v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583h-1.735v-.583a.116.116,0,0,0-.116-.116h-21.74a.116.116,0,0,0-.116.116h0v.583h-1.734v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583h-1.735v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583h-1.735v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583h-1.734v-.583a.116.116,0,0,0-.116-.116h-2.776a.116.116,0,0,0-.116.116h0v.583h-1.735v-.583a.116.116,0,0,0-.116-.116h-2.775a.116.116,0,0,0-.116.116h0v.583H225.6v-.583a.116.116,0,0,0-.116-.116H222.71a.116.116,0,0,0-.116.116h0v.583h-5.319A2.775,2.775,0,0,0,214.5,649.3v1.255a2.775,2.775,0,0,0,2.775,2.775h92.281a2.775,2.775,0,0,0,2.775-2.775V649.3a2.775,2.775,0,0,0-2.775-2.775Z"
+                                    transform="translate(-195.33 -586.396)"
+                                    fill="#3f3d56"
+                                  />
+                                  <rect
+                                    id="Rectangle_126"
+                                    data-name="Rectangle 126"
+                                    width="33.58"
+                                    height="35.299"
+                                    transform="translate(50.53 19.501)"
+                                    fill="#e6e6e6"
+                                  />
+                                  <rect
+                                    id="Rectangle_128"
+                                    data-name="Rectangle 128"
+                                    width="140.269"
+                                    height="0.264"
+                                    transform="translate(0 66.816)"
+                                    fill="#e6e6e6"
+                                  />
+                                  <path
+                                    id="Path_776"
+                                    data-name="Path 776"
+                                    d="M995.4,616.418a8.649,8.649,0,0,1,2,5.037,7.446,7.446,0,0,1-6.883-7.385A8.65,8.65,0,0,1,995.4,616.418Z"
+                                    transform="translate(-868.754 -558.839)"
+                                    fill="#4b33f7"
+                                  />
+                                  <path
+                                    id="Path_777"
+                                    data-name="Path 777"
+                                    d="M1039.651,623.855a8.648,8.648,0,0,1-5.037,2,7.447,7.447,0,0,1,7.385-6.883A8.649,8.649,0,0,1,1039.651,623.855Z"
+                                    transform="translate(-907.022 -563.093)"
+                                    fill="#4b33f7"
+                                  />
+                                  <path
+                                    id="Path_778"
+                                    data-name="Path 778"
+                                    d="M1003.884,669.589h-7.5a.767.767,0,0,1-.69-.432L994.06,665.8a.767.767,0,0,1,.69-1.1h10.767a.767.767,0,0,1,.69,1.1l-1.633,3.357a.766.766,0,0,1-.69.432Z"
+                                    transform="translate(-871.762 -602.773)"
+                                    fill="#e5e5e5"
+                                  />
+                                  <path
+                                    id="Path_779"
+                                    data-name="Path 779"
+                                    d="M98.4,616.418a8.649,8.649,0,0,1,2,5.037,7.447,7.447,0,0,1-6.883-7.385A8.65,8.65,0,0,1,98.4,616.418Z"
+                                    transform="translate(-90.341 -558.839)"
+                                    fill="#e5e5e5"
+                                  />
+                                  <path
+                                    id="Path_780"
+                                    data-name="Path 780"
+                                    d="M97.884,669.589h-7.5a.767.767,0,0,1-.69-.432L88.06,665.8a.767.767,0,0,1,.69-1.1H99.517a.767.767,0,0,1,.69,1.1l-1.633,3.357a.767.767,0,0,1-.69.432Z"
+                                    transform="translate(-85.539 -602.773)"
+                                    fill="#e5e5e5"
+                                  />
+                                  <circle
+                                    id="Ellipse_127"
+                                    data-name="Ellipse 127"
+                                    cx="4.463"
+                                    cy="4.463"
+                                    r="4.463"
+                                    transform="translate(66.908 20.567)"
+                                    fill="#a0616a"
+                                  />
+                                  <path
+                                    id="Path_803"
+                                    data-name="Path 803"
+                                    d="M531.686,454.193l2.882-18.143a6.879,6.879,0,0,1,8.723-5.524h0a6.858,6.858,0,0,1,4.833,7.861l-3.014,16.2Z"
+                                    transform="translate(-470.583 -399.321)"
+                                    fill="#4b33f7"
+                                  />
+                                  <path
+                                    id="Path_804"
+                                    data-name="Path 804"
+                                    d="M599.927,579.768a1.827,1.827,0,0,0,.317-2.784l2.979-5.769-3.355.358L597.553,577a1.838,1.838,0,0,0,2.373,2.771Z"
+                                    transform="translate(-527.323 -521.65)"
+                                    fill="#a0616a"
+                                  />
+                                  <path
+                                    id="Path_805"
+                                    data-name="Path 805"
+                                    d="M611.405,472.407a.819.819,0,0,1-.441-.209l-1.14-1.053a.82.82,0,0,1-.2-.918l2.278-5.4-.323-10.67a2.634,2.634,0,1,1,5.22.712h0l.553,6.707a8.426,8.426,0,0,1-1.624,5.7l-3.553,4.8a.819.819,0,0,1-.581.328A.81.81,0,0,1,611.405,472.407Z"
+                                    transform="translate(-538.164 -418.09)"
+                                    fill="#4b33f7"
+                                  />
+                                  <path
+                                    id="Path_806"
+                                    data-name="Path 806"
+                                    d="M414.749,352.938a1.827,1.827,0,0,0,2.44,1.378l4.151,4.993.978-3.229-4.092-4.246a1.838,1.838,0,0,0-3.477,1.105Z"
+                                    transform="translate(-369.078 -330.34)"
+                                    fill="#a0616a"
+                                  />
+                                  <path
+                                    id="Path_807"
+                                    data-name="Path 807"
+                                    d="M438.794,376.1a.819.819,0,0,1,.364-.324l1.415-.639a.82.82,0,0,1,.923.175l4.084,4.2,9.951,3.862a2.634,2.634,0,0,1-2.691,4.529h0l-6.392-2.106a8.426,8.426,0,0,1-4.62-3.72l-3.037-5.144a.817.817,0,0,1,0-.836Z"
+                                    transform="translate(-389.871 -351.429)"
+                                    fill="#4b33f7"
+                                  />
+                                  <path
+                                    id="Path_808"
+                                    data-name="Path 808"
+                                    d="M613.573,502.685l-.182,5.814-3.347,5.817,2.795-6.482Z"
+                                    transform="translate(-538.582 -462.179)"
+                                    opacity="0.1"
+                                    style="isolation: isolate"
+                                  />
+                                  <path
+                                    id="Path_696"
+                                    data-name="Path 696"
+                                    d="M573.6,341.317a2.812,2.812,0,0,0,1.958.762,18.432,18.432,0,0,0,5.008-.409c.1.987-.176,2.05.405,2.862a13.283,13.283,0,0,0,.472-3.012,2.884,2.884,0,0,0-.167-1.29,1.187,1.187,0,0,0-1.011-.745,2.532,2.532,0,0,1,1.13-.483l-1.412-.71.363-.372-2.556-.156.74-.47a16.054,16.054,0,0,0-3.363-.106,2.886,2.886,0,0,0-1.488.414,1.074,1.074,0,0,0-.4,1.345,1.953,1.953,0,0,0-1.488,1.181,3.154,3.154,0,0,0-.113,1.515,10.737,10.737,0,0,0,.563,2.382"
+                                    transform="translate(-505.247 -318.523)"
+                                    fill="#2f2e41"
+                                  />
+                                  <path
+                                    id="Path_138"
+                                    data-name="Path 138"
+                                    d="M442.372,207.915,401.706,217.3a.774.774,0,0,1-.927-.579l-2.329-10.087a.774.774,0,0,1,.579-.927l40.666-9.388a.774.774,0,0,1,.927.579l2.329,10.087A.774.774,0,0,1,442.372,207.915Z"
+                                    transform="translate(-354.944 -196.301)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_138-2"
+                                    data-name="Path 138"
+                                    d="M442.372,207.915,401.706,217.3a.774.774,0,0,1-.927-.579l-2.329-10.087a.774.774,0,0,1,.579-.927l40.666-9.388a.774.774,0,0,1,.927.579l2.329,10.087A.774.774,0,0,1,442.372,207.915Zm-43.273-1.9a.464.464,0,0,0-.348.556l2.329,10.087a.464.464,0,0,0,.556.348l40.666-9.388a.464.464,0,0,0,.348-.556l-2.329-10.088a.464.464,0,0,0-.556-.348Z"
+                                    transform="translate(-354.944 -196.301)"
+                                    fill="#e6e6e6"
+                                  />
+                                  <path
+                                    id="Path_139"
+                                    data-name="Path 139"
+                                    d="M507.545,232.894a.525.525,0,1,0,.234,1.023h0l24.1-5.564a.525.525,0,1,0-.236-1.023Z"
+                                    transform="translate(-449.28 -223.216)"
+                                    fill="#e6e6e6"
+                                  />
+                                  <path
+                                    id="Path_140"
+                                    data-name="Path 140"
+                                    d="M512.9,276.906a.525.525,0,0,0,.234,1.023h0l10.371-2.394a.525.525,0,0,0-.234-1.023h0Z"
+                                    transform="translate(-453.929 -264.16)"
+                                    fill="#e6e6e6"
+                                  />
+                                  <g
+                                    id="Group_45"
+                                    data-name="Group 45"
+                                    transform="translate(48.528 10.181)"
+                                  >
+                                    <circle
+                                      id="Ellipse_18"
+                                      data-name="Ellipse 18"
+                                      cx="3.148"
+                                      cy="3.148"
+                                      r="3.148"
+                                      fill="#4b33f7"
+                                    />
+                                    <path
+                                      id="Path_395"
+                                      data-name="Path 395"
+                                      d="M447.445,284.963a.488.488,0,0,1-.308-.029l-.006,0-1.267-.575a.491.491,0,1,1,.407-.894l.821.374,1.152-2.53a.491.491,0,0,1,.65-.243h0l-.007.017.007-.017a.491.491,0,0,1,.243.65l-1.354,2.977a.491.491,0,0,1-.337.274Z"
+                                      transform="translate(-444.385 -279.999)"
+                                      fill="#fff"
+                                    />
+                                  </g>
+                                </svg>
+
+                                <span class="vstack gap-narrow mt-nnarrow">
+                                  <b class="fw-bold text-gray-900">
+                                    Info message
+                                  </b>
+                                  <span class="fw-normal text-gray-900">
+                                    Start Guiding Your Visitors Better Today.
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                class="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                                href="features.html"
+                              >
+                                <!-- <i
+                                  class="icon-1 unicon-chart-pie fw-bold text-primary dark:text-secondary"
+                                ></i> -->
+                                <svg
+                                  width="111.324"
+                                  height="69.412"
+                                  viewBox="0 0 111.324 69.412"
+                                >
+                                  <g transform="translate(0 -0.162)">
+                                    <path
+                                      id="Path_343"
+                                      data-name="Path 343"
+                                      d="M0,426.113a.193.193,0,0,0,.193.193H111.131a.193.193,0,0,0,0-.386H.193A.193.193,0,0,0,0,426.113Z"
+                                      transform="translate(0 -356.768)"
+                                      fill="#3f3d56"
+                                    />
+                                    <path
+                                      id="Path_344"
+                                      data-name="Path 344"
+                                      d="M94.148,66.978ZM56.96.325a2.189,2.189,0,0,0-2.187,2.187V66.978a2.189,2.189,0,0,0,2.187,2.187H91.636a2.189,2.189,0,0,0,2.187-2.187V2.511A2.189,2.189,0,0,0,91.636.325Z"
+                                      transform="translate(-45.608)"
+                                      fill="#fff"
+                                    />
+                                    <g
+                                      id="Group_702"
+                                      data-name="Group 702"
+                                      transform="translate(91.148 25.451)"
+                                    >
+                                      <path
+                                        id="Path_345"
+                                        data-name="Path 345"
+                                        d="M611.789,186.739c-.137-.231-.73.016-.839-.193s.442-.527.757-1.255c.057-.131.414-.958.15-1.213-.5-.484-2.8,1.512-3.6.859a10.726,10.726,0,0,0-.834-.894c-.212-.185-.341-.268-.465-.237-.176.044-.19.28-.38.744-.284.7-.451.654-.617,1.209-.123.412-.095.652-.239.7-.2.066-.392-.371-.651-.332s-.424.549-.474.93a3.572,3.572,0,0,0,.314,1.684,4.229,4.229,0,0,1-.113,2.521l-3.617,10.191c.8-2.091,3.111-7.823,4.082-9.953a2.523,2.523,0,0,1,1.226-1.485c.612-.237,1.453-.1,2.525-.354.125-.03.473-.119.516-.323.036-.169-.168-.263-.137-.421.042-.212.444-.215.938-.46a2.921,2.921,0,0,0,.752-.555c.056-.053.892-.854.71-1.162Z"
+                                        transform="translate(-594.719 -179.409)"
+                                        fill="#f2f2f2"
+                                      />
+                                      <path
+                                        id="Path_346"
+                                        data-name="Path 346"
+                                        d="M564.241,230.789c-.153,0-.2.363-.337.356s-.131-.369-.4-.734c-.048-.066-.351-.48-.552-.423-.382.107-.066,1.81-.618,2.016a6.108,6.108,0,0,0-.679.151c-.152.051-.23.09-.251.16-.029.1.083.174.256.4.26.34.191.41.416.652.167.179.293.235.274.319-.027.119-.3.085-.351.224s.147.366.32.5a2.033,2.033,0,0,0,.917.332,2.407,2.407,0,0,1,1.2.783l3.958,4.716c-.8-1-2.942-3.784-3.707-4.875a1.437,1.437,0,0,1-.375-1.03c.06-.369.372-.741.555-1.341.021-.07.078-.266-.01-.347-.073-.066-.178.007-.246-.054-.092-.082.023-.28.045-.593a1.665,1.665,0,0,0-.055-.529c-.01-.043-.162-.684-.365-.684h0Z"
+                                        transform="translate(-561.401 -218.094)"
+                                        fill="#f2f2f2"
+                                      />
+                                      <path
+                                        id="Path_347"
+                                        data-name="Path 347"
+                                        d="M597.213,220.7l-.092-.823.042-.062a1.522,1.522,0,0,0,.3-.838c0-.043,0-.085,0-.128a1.287,1.287,0,0,1,.093-.634c.062-.139.238-.46.5-.42a.3.3,0,0,1,.165.081l.019-.029a.905.905,0,0,1,.21-.23,1.064,1.064,0,0,0,.176-.178c.034-.043.061-.08.083-.111a.387.387,0,0,1,.314-.206.412.412,0,0,1,.314.238,1.985,1.985,0,0,1,.182.36.632.632,0,0,0,.031.071c.054.079.493.005.659-.022.372-.062.693-.116.826.119.095.168.024.389-.216.677a1.34,1.34,0,0,1-.225.211.276.276,0,0,1,.132.173h0c.05.2-.121.4-.509.595a1.37,1.37,0,0,1-.408.145,1.6,1.6,0,0,1-.229.02.272.272,0,0,1-.034.122.407.407,0,0,1-.424.17,3.322,3.322,0,0,1-.6-.1,1.453,1.453,0,0,0-.379-.056c-.187.015-.331.165-.5.359l-.423.494Z"
+                                        transform="translate(-591.321 -207.324)"
+                                        fill="#f2f2f2"
+                                      />
+                                      <path
+                                        id="Path_348"
+                                        data-name="Path 348"
+                                        d="M580.068,193.166l-.773.3-.071-.025a1.522,1.522,0,0,0-.885-.073c-.041.011-.082.023-.123.036a1.287,1.287,0,0,1-.637.07c-.15-.025-.505-.113-.533-.378a.3.3,0,0,1,.036-.18l-.033-.011a.9.9,0,0,1-.276-.144,1.06,1.06,0,0,0-.216-.125c-.05-.022-.093-.039-.129-.052a.386.386,0,0,1-.279-.251.413.413,0,0,1,.151-.364,1.985,1.985,0,0,1,.3-.268.617.617,0,0,0,.061-.048c.063-.072-.12-.478-.188-.632-.154-.344-.288-.641-.095-.829.138-.134.37-.122.709.037a1.344,1.344,0,0,1,.261.165.276.276,0,0,1,.134-.172h0c.18-.1.417.016.7.342a1.37,1.37,0,0,1,.244.358,1.6,1.6,0,0,1,.078.216.271.271,0,0,1,.127,0c.138.034.232.156.272.367a3.327,3.327,0,0,1,.059.6,1.452,1.452,0,0,0,.041.381c.062.177.244.279.474.393l.585.283h0Z"
+                                        transform="translate(-573.749 -184.685)"
+                                        fill="#f2f2f2"
+                                      />
+                                      <path
+                                        id="Path_349"
+                                        data-name="Path 349"
+                                        d="M597.213,175.6l-.092-.823.042-.062a1.522,1.522,0,0,0,.3-.838c0-.043,0-.085,0-.128a1.287,1.287,0,0,1,.093-.634c.062-.139.238-.46.5-.42a.3.3,0,0,1,.165.081l.019-.029a.905.905,0,0,1,.21-.23,1.062,1.062,0,0,0,.176-.178c.034-.042.061-.08.083-.111a.387.387,0,0,1,.314-.206.412.412,0,0,1,.314.238,1.985,1.985,0,0,1,.182.36.631.631,0,0,0,.031.071c.054.079.493.005.659-.022.372-.062.693-.116.826.119.095.168.024.389-.216.677a1.34,1.34,0,0,1-.225.211.276.276,0,0,1,.132.173h0c.05.2-.121.4-.509.595a1.37,1.37,0,0,1-.408.145,1.6,1.6,0,0,1-.229.02.272.272,0,0,1-.034.122.407.407,0,0,1-.424.17,3.327,3.327,0,0,1-.6-.1,1.454,1.454,0,0,0-.379-.056c-.187.015-.331.165-.5.359l-.423.494Z"
+                                        transform="translate(-591.321 -169.541)"
+                                        fill="#f2f2f2"
+                                      />
+                                      <path
+                                        id="Path_350"
+                                        data-name="Path 350"
+                                        d="M590.768,192.084l-.172-.108-.042-.2.042.2-.2.023c0-.019-.014-.062-.031-.129a28.774,28.774,0,0,1-.593-3.251,33.131,33.131,0,0,1-.269-3.762c-.019-1.267.041-2.227.089-3,.036-.582.08-1.136.124-1.675a31.33,31.33,0,0,0,.143-4.311,3.993,3.993,0,0,0-.465-1.782,3.785,3.785,0,0,0-.972-1.14l.253-.319a4.2,4.2,0,0,1,1.075,1.263,4.375,4.375,0,0,1,.514,1.956,31.629,31.629,0,0,1-.144,4.364c-.043.538-.087,1.089-.123,1.668-.048.764-.107,1.715-.089,2.966a32.735,32.735,0,0,0,.265,3.716,28.332,28.332,0,0,0,.585,3.206c.047.193.057.234.009.311Z"
+                                        transform="translate(-584.034 -170.055)"
+                                        fill="#f2f2f2"
+                                      />
+                                      <path
+                                        id="Path_351"
+                                        data-name="Path 351"
+                                        d="M575.783,160.3l-.051,0a1.3,1.3,0,0,1-.954-.616,2.847,2.847,0,0,1-.34-.811,5.084,5.084,0,0,1-.187-.84.825.825,0,0,1,.022-.525.621.621,0,0,1,.287-.262.23.23,0,0,1,.016-.12c.069-.17.254-.147.353-.137a1,1,0,0,0,.181.011.511.511,0,0,0,.251-.085,1.132,1.132,0,0,1,.34-.134,1.213,1.213,0,0,1,.64.051,1.783,1.783,0,0,1,.908.885,3.1,3.1,0,0,1,.335.765.909.909,0,0,1,.046.508c-.05.194-.168.306-.468.551a5.456,5.456,0,0,1-.606.464,1.529,1.529,0,0,1-.774.3Z"
+                                        transform="translate(-572.143 -156.76)"
+                                        fill="#f2f2f2"
+                                      />
+                                    </g>
+                                    <rect
+                                      id="Rectangle_398"
+                                      data-name="Rectangle 398"
+                                      width="39.893"
+                                      height="10.362"
+                                      transform="translate(8.743 28.657)"
+                                      fill="#4b33f7"
+                                    />
+                                    <rect
+                                      id="Rectangle_399"
+                                      data-name="Rectangle 399"
+                                      width="10.362"
+                                      height="69.165"
+                                      transform="translate(23.768 0.162)"
+                                      fill="#4b33f7"
+                                    />
+                                    <path
+                                      id="Path_352"
+                                      data-name="Path 352"
+                                      d="M106.351,141.984a4.139,4.139,0,0,0,.128-.888l12.96-11.8-11.139-5.44-4.909,13.091a3.919,3.919,0,0,0-1.615-.1l-4.873-13-11.139,5.44,12.45,11.339c-.008.105-.016.211-.016.318a4.139,4.139,0,0,0,.135,1.033c-7.632,2.385-10.756,9.588-10.756,9.588l9.585,7.771c-.572-5.716,2.919-11.569,4.807-14.266.123.011.248.019.374.019s.251-.008.374-.019c1.887,2.7,5.378,8.55,4.807,14.266l9.585-7.771s-3.124-7.2-10.756-9.588Z"
+                                      transform="translate(-71.838 -103.745)"
+                                      opacity="0.2"
+                                      style="isolation: isolate"
+                                    />
+                                    <path
+                                      id="Path_353"
+                                      data-name="Path 353"
+                                      d="M107.393,146.8a.779.779,0,0,1-.331-.074.762.762,0,0,1-.444-.683c-.079-5.012-2.936-9.93-4.633-12.416a.628.628,0,0,0-.523-.265h0a.632.632,0,0,0-.531.265c-1.7,2.486-4.554,7.4-4.633,12.416a.763.763,0,0,1-.444.683.771.771,0,0,1-.818-.1l-7.966-6.459a.779.779,0,0,1-.2-.961,18.979,18.979,0,0,1,9.99-8.927.612.612,0,0,0,.4-.658,4.046,4.046,0,0,1-.03-.485.64.64,0,0,0-.2-.479L85.58,118.224a.775.775,0,0,1,.182-1.269L95.3,112.3a.774.774,0,0,1,1.065.424l4.421,11.79a.61.61,0,0,0,.591.4,4,4,0,0,1,.606.033.61.61,0,0,0,.656-.39l4.436-11.829a.774.774,0,0,1,1.065-.424l9.536,4.657a.775.775,0,0,1,.182,1.269l-12,10.928a.607.607,0,0,0-.2.391c0,.033-.007.065-.01.1h0a.606.606,0,0,0,.4.635,18.978,18.978,0,0,1,9.992,8.928.779.779,0,0,1-.2.961l-7.967,6.459a.772.772,0,0,1-.487.174Z"
+                                      transform="translate(-71.473 -94)"
+                                      fill="#4b33f7"
+                                    />
+                                    <path
+                                      id="Path_354"
+                                      data-name="Path 354"
+                                      d="M452.6,312.142Zm-35.967-19.209a2.189,2.189,0,0,0-2.187,2.187v17.023a2.189,2.189,0,0,0,2.187,2.187h33.456a2.189,2.189,0,0,0,2.187-2.187V295.12a2.189,2.189,0,0,0-2.187-2.187Z"
+                                      transform="translate(-346.888 -245.101)"
+                                      fill="#fff"
+                                    />
+                                    <rect
+                                      id="Rectangle_400"
+                                      data-name="Rectangle 400"
+                                      width="5.716"
+                                      height="22.007"
+                                      transform="translate(84.118 47.527)"
+                                      fill="#4b33f7"
+                                    />
+                                    <rect
+                                      id="Rectangle_401"
+                                      data-name="Rectangle 401"
+                                      width="38.154"
+                                      height="5.716"
+                                      transform="translate(67.399 55.815)"
+                                      fill="#4b33f7"
+                                    />
+                                    <path
+                                      id="Path_355"
+                                      data-name="Path 355"
+                                      d="M476.348,324.689a2.285,2.285,0,0,0,.49.07l6.511,7.149,3-6.145-7.222-2.708a2.161,2.161,0,0,0,.053-.891l7.169-2.688-3-6.145-6.255,6.868c-.058,0-.116-.009-.176-.009a2.284,2.284,0,0,0-.57.074,10.364,10.364,0,0,0-5.289-5.933l-4.287,5.287c3.153-.315,6.382,1.61,7.87,2.651-.006.068-.01.137-.01.206s0,.138.01.206c-1.488,1.041-4.716,2.967-7.87,2.651l4.287,5.287a10.364,10.364,0,0,0,5.289-5.933Z"
+                                      transform="translate(-390.988 -262.46)"
+                                      opacity="0.2"
+                                      style="isolation: isolate"
+                                    />
+                                    <path
+                                      id="Path_356"
+                                      data-name="Path 356"
+                                      d="M487.175,328.022a.463.463,0,0,1-.342-.151l-6.029-6.62a.316.316,0,0,0-.2-.1l-.026,0a.3.3,0,0,0-.328.194,10.5,10.5,0,0,1-4.946,5.536.463.463,0,0,1-.572-.12l-3.564-4.4a.462.462,0,0,1-.06-.49.455.455,0,0,1,.407-.265,13.54,13.54,0,0,0,6.83-2.549.327.327,0,0,0,0-.524,13.538,13.538,0,0,0-6.831-2.549.455.455,0,0,1-.407-.265.462.462,0,0,1,.06-.49l3.564-4.4a.465.465,0,0,1,.572-.12,10.506,10.506,0,0,1,4.946,5.535.3.3,0,0,0,.311.2,2.152,2.152,0,0,1,.427-.012l5.849-6.423a.463.463,0,0,1,.759.109l2.569,5.261a.463.463,0,0,1-.254.637l-6.5,2.439a.3.3,0,0,0-.195.291v.047a2.276,2.276,0,0,1-.021.306.3.3,0,0,0,.194.31l6.525,2.447a.463.463,0,0,1,.254.637l-2.569,5.261a.462.462,0,0,1-.351.255A.47.47,0,0,1,487.175,328.022Z"
+                                      transform="translate(-394.58 -259.556)"
+                                      fill="#4b33f7"
+                                    />
+                                    <g
+                                      id="Group_703"
+                                      data-name="Group 703"
+                                      transform="translate(53.554 19.506)"
+                                    >
+                                      <path
+                                        id="Path_357"
+                                        data-name="Path 357"
+                                        d="M356.7,135.806h-5.232v-1.723a5.235,5.235,0,0,1,5.232-5.232h0v6.955Z"
+                                        transform="translate(-347.955 -127.437)"
+                                        fill="#2f2e41"
+                                      />
+                                      <path
+                                        id="Path_358"
+                                        data-name="Path 358"
+                                        d="M353.991,148.5l.9,4.046-5.272-.875,2.148-3.827Z"
+                                        transform="translate(-346.409 -143.343)"
+                                        fill="#ffb6b6"
+                                      />
+                                      <path
+                                        id="Path_359"
+                                        data-name="Path 359"
+                                        d="M353.991,148.5l.9,4.046-5.272-.875,2.148-3.827Z"
+                                        transform="translate(-346.409 -143.343)"
+                                        opacity="0.1"
+                                        style="isolation: isolate"
+                                      />
+                                      <rect
+                                        id="Rectangle_402"
+                                        data-name="Rectangle 402"
+                                        width="5.054"
+                                        height="7.48"
+                                        transform="translate(2.527 13.797)"
+                                        fill="#ffb6b6"
+                                      />
+                                      <path
+                                        id="Path_360"
+                                        data-name="Path 360"
+                                        d="M365.491,288.857l-1.112,5.964a14.969,14.969,0,0,1-1.415,8.39l-1.415,4.347-2.123-.3a19.4,19.4,0,0,0,1.314-4.65c0-1.415.3-6.874.3-6.874l-.152-6.229,4.6-.645Z"
+                                        transform="translate(-354.624 -261.465)"
+                                        fill="#ffb6b6"
+                                      />
+                                      <path
+                                        id="Path_361"
+                                        data-name="Path 361"
+                                        d="M354.627,399.963s2.426-.91,2.628.4l-.1.607s.91,2.729-.4,2.931-2.527.505-2.628-.1a3.432,3.432,0,0,1,.152-1.895A8.157,8.157,0,0,0,354.627,399.963Z"
+                                        transform="translate(-350.129 -354.275)"
+                                        fill="#2f2e41"
+                                      />
+                                      <path
+                                        id="Path_362"
+                                        data-name="Path 362"
+                                        d="M340.4,283.159l-.591,6.038a14.969,14.969,0,0,0-.974,8.452l.15,4.569,2.123.3a19.4,19.4,0,0,1,.031-4.832c.394-1.359,1.62-6.687,1.62-6.687l1.878-5.941-4.238-1.9Z"
+                                        transform="translate(-337.184 -256.692)"
+                                        fill="#ffb6b6"
+                                      />
+                                      <path
+                                        id="Path_363"
+                                        data-name="Path 363"
+                                        d="M337.641,398.172s-2.077-1.549-2.637-.343l-.072.611s-1.6,3.018-.4,3.578,2.258.538,2.524-.016a3.432,3.432,0,0,0,.381-1.862,8.158,8.158,0,0,1,.2-1.968Z"
+                                        transform="translate(-333.398 -352.359)"
+                                        fill="#2f2e41"
+                                      />
+                                      <path
+                                        id="Path_364"
+                                        data-name="Path 364"
+                                        d="M339.4,229.711l4.347,9.2s-8.744,4.4-13.9,4.4l2.56-13.6H339.4Z"
+                                        transform="translate(-329.853 -211.921)"
+                                        fill="#2f2e41"
+                                      />
+                                      <path
+                                        id="Path_365"
+                                        data-name="Path 365"
+                                        d="M353.822,162.362l2.527.4-.2,6.368,2.83,5.661-3.639,1.819s-2.83-5.357-3.336-8.693a23.226,23.226,0,0,1-.2-5.762l2.022.2Z"
+                                        transform="translate(-348.161 -155.338)"
+                                        fill="#e6e6e6"
+                                      />
+                                      <path
+                                        id="Path_366"
+                                        data-name="Path 366"
+                                        d="M337.765,163.607l-2.527.4.2,6.368-.607,5.863,1.415,1.617s2.83-5.357,3.336-8.693a23.226,23.226,0,0,0,.2-5.762l-2.022.2Z"
+                                        transform="translate(-334.025 -156.381)"
+                                        fill="#e6e6e6"
+                                      />
+                                      <path
+                                        id="Path_367"
+                                        data-name="Path 367"
+                                        d="M376.167,165.854l.556-.152s1.971-.253,2.274.556a37.29,37.29,0,0,1,.2,5.56s.522,5.831-1.508,5.9-1.625-4.785-1.625-4.785Z"
+                                        transform="translate(-368.536 -158.274)"
+                                        fill="#e6e6e6"
+                                      />
+                                      <circle
+                                        id="Ellipse_60"
+                                        data-name="Ellipse 60"
+                                        cx="2.616"
+                                        cy="2.616"
+                                        r="2.616"
+                                        transform="translate(4.083 1.031)"
+                                        fill="#ffb6b6"
+                                      />
+                                      <path
+                                        id="Path_368"
+                                        data-name="Path 368"
+                                        d="M362.518,164.674c.561-.142,1.2.457,1.421,1.339a2.277,2.277,0,0,1,.026,1.075l.241,1h.018l1.9,4.483a3.628,3.628,0,0,1-.169,3.221c-.336.584-.776.977-1.293.576-.858-.665-1.419-4.473-1.675-6.66l-.592-2.223a2.277,2.277,0,0,1-.49-.957c-.224-.882.05-1.712.611-1.855Z"
+                                        transform="translate(-356.638 -157.426)"
+                                        fill="#ffb6b6"
+                                      />
+                                      <path
+                                        id="Path_369"
+                                        data-name="Path 369"
+                                        d="M335.065,165.854l-.556-.152s-1.971-.253-2.274.556a37.29,37.29,0,0,0-.2,5.56s-.522,5.831,1.508,5.9,1.625-4.785,1.625-4.785Z"
+                                        transform="translate(-331.629 -158.274)"
+                                        fill="#e6e6e6"
+                                      />
+                                      <path
+                                        id="Path_370"
+                                        data-name="Path 370"
+                                        d="M341.656,164.674c-.561-.142-1.2.457-1.421,1.339a2.277,2.277,0,0,0-.026,1.075l-.241,1h-.018l-1.9,4.483a3.628,3.628,0,0,0,.169,3.221c.336.584.776.977,1.293.576.858-.665,1.419-4.473,1.675-6.66l.592-2.223a2.277,2.277,0,0,0,.49-.957c.224-.882-.05-1.712-.611-1.855Z"
+                                        transform="translate(-336.469 -157.426)"
+                                        fill="#ffb6b6"
+                                      />
+                                      <path
+                                        id="Path_371"
+                                        data-name="Path 371"
+                                        d="M339.769,125.906c.133-.4.4-.759.513-1.168.156-.544.488.662.521.1a8.616,8.616,0,0,1,2.635-4.364,2.107,2.107,0,0,1,2.425.128,3.03,3.03,0,0,1,1.038.314,2.578,2.578,0,0,1,1.318,1.341,6.4,6.4,0,0,1,.217,1.506c.165,1.408.954,2.747.785,4.155a1.627,1.627,0,0,1-.579,1.152.848.848,0,0,1-1.176-.144c-.081-.128-.115-.279-.184-.413a.413.413,0,0,0-.345-.255c-.227.006-.342.311-.253.519a1.06,1.06,0,0,0,.5.446,1.444,1.444,0,0,1-2.021-1.529c.107-.718,1.153-.57,1.276-1.285a7.277,7.277,0,0,0,.319-1.914c-.086-.522-.5.11-.064-.191-.478.23-1.5-1.345-2-1.522a2.043,2.043,0,0,1-1.152-1.038c-.531.769-1,.56-1.187,1.475s-.014,2.993.768,3.5a1.994,1.994,0,0,0-.71.869,2.152,2.152,0,0,1-.275.579,1.054,1.054,0,0,1-1.139.2,1.955,1.955,0,0,1-1.228-2.462Z"
+                                        transform="translate(-338.079 -120.142)"
+                                        fill="#2f2e41"
+                                      />
+                                    </g>
+                                  </g>
+                                </svg>
+
+                                <span class="vstack gap-narrow mt-nnarrow">
+                                  <b class="fw-bold text-gray-900">
+                                    Discounts
+                                  </b>
+                                  <span class="fw-normal text-gray-900">
+                                    Start Guiding Your Visitors Better Today.
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                class="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                                href="features.html"
+                              >
+                                <!-- <i
+                                  class="icon-1 unicon-increase-level fw-bold text-primary dark:text-secondary"
+                                ></i> -->
+                                <svg
+                                  id="undraw_mailbox_re_dvds"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="93.195"
+                                  height="79.778"
+                                  viewBox="0 0 93.195 79.778"
+                                >
+                                  <path
+                                    id="Path_388"
+                                    data-name="Path 388"
+                                    d="M339.139,575.615a6.038,6.038,0,0,0,2.167-5.205,4.881,4.881,0,0,0-3.629-4.144,4.109,4.109,0,0,0-4.679,2.6c-.32-3.606-.689-7.363-2.606-10.434a11.05,11.05,0,0,0-8-5.126,9.914,9.914,0,0,0-8.722,3.56,9,9,0,0,0-1.107,9.264,13.388,13.388,0,0,0,5,5.111,32.3,32.3,0,0,0,22.089,4.832"
+                                    transform="translate(-311.75 -496.67)"
+                                    fill="#f2f2f2"
+                                  />
+                                  <path
+                                    id="Path_389"
+                                    data-name="Path 389"
+                                    d="M340.754,559.79a53.292,53.292,0,0,1,15.658,21.173c.149.366-.445.525-.593.163a52.742,52.742,0,0,0-15.5-20.9C340.013,559.975,340.45,559.542,340.754,559.79Z"
+                                    transform="translate(-335.614 -502.091)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_390"
+                                    data-name="Path 390"
+                                    d="M476.133,575.615a6.038,6.038,0,0,1-2.167-5.205,4.881,4.881,0,0,1,3.629-4.144,4.109,4.109,0,0,1,4.679,2.6c.32-3.606.689-7.363,2.606-10.434a11.05,11.05,0,0,1,8-5.126,9.914,9.914,0,0,1,8.722,3.56,9,9,0,0,1,1.107,9.264,13.388,13.388,0,0,1-5,5.111,32.3,32.3,0,0,1-22.089,4.832"
+                                    transform="translate(-447.712 -496.67)"
+                                    fill="#f2f2f2"
+                                  />
+                                  <path
+                                    id="Path_391"
+                                    data-name="Path 391"
+                                    d="M543.86,559.79A53.293,53.293,0,0,0,528.2,580.963c-.149.366.445.525.593.163a52.7,52.7,0,0,1,15.5-20.9C544.6,559.975,544.164,559.542,543.86,559.79Z"
+                                    transform="translate(-493.19 -502.091)"
+                                    fill="#fff"
+                                  />
+                                  <circle
+                                    id="Ellipse_66"
+                                    data-name="Ellipse 66"
+                                    cx="5.011"
+                                    cy="5.011"
+                                    r="5.011"
+                                    transform="translate(27.85 25.865)"
+                                    fill="#f2f2f2"
+                                  />
+                                  <path
+                                    id="Path_392"
+                                    data-name="Path 392"
+                                    d="M349.512,287.388h34.527v1.889H353.92a13.485,13.485,0,0,0-13.485,13.485v21.461h-3.778a.63.63,0,0,1-.63-.63V300.873A13.485,13.485,0,0,1,349.512,287.388Z"
+                                    transform="translate(-332.103 -273.786)"
+                                    fill="#f2f2f2"
+                                  />
+                                  <path
+                                    id="Path_393"
+                                    data-name="Path 393"
+                                    d="M460.527,543.444V514.75h8.406v28.694a.728.728,0,0,1-.727.727h-6.951A.728.728,0,0,1,460.527,543.444Z"
+                                    transform="translate(-436.476 -464.394)"
+                                    fill="#3f3d56"
+                                  />
+                                  <path
+                                    id="Path_394"
+                                    data-name="Path 394"
+                                    d="M325.027,317.593V294.26a14.026,14.026,0,0,1,14.01-14.01h35.619V318.4h-48.82A.809.809,0,0,1,325.027,317.593Zm49.305-37.019h-35.3A13.7,13.7,0,0,0,325.35,294.26v23.333a.486.486,0,0,0,.485.485h48.5Z"
+                                    transform="translate(-322.881 -267.802)"
+                                    fill="#3f3d56"
+                                  />
+                                  <path
+                                    id="Path_395"
+                                    data-name="Path 395"
+                                    d="M434.546,236.713a2.913,2.913,0,0,1-2.91-2.91V212.949a.485.485,0,0,0-.485-.485H419.835a.809.809,0,0,1-.808-.808v-7.6a.809.809,0,0,1,.808-.808h16.812a.809.809,0,0,1,.808.808V233.8A2.913,2.913,0,0,1,434.546,236.713Z"
+                                    transform="translate(-401.685 -203.25)"
+                                    fill="#4b33f7"
+                                  />
+                                  <path
+                                    id="Path_396"
+                                    data-name="Path 396"
+                                    d="M592.242,278.25h0a9.2,9.2,0,0,1,9.214,9.176v26.562h18.106a2.742,2.742,0,0,1,2.748,2.737H583.027v-29.3A9.2,9.2,0,0,1,592.242,278.25Z"
+                                    transform="translate(-539.173 -266.126)"
+                                    fill="#3f3d56"
+                                  />
+                                  <path
+                                    id="Path_397"
+                                    data-name="Path 397"
+                                    d="M626.263,264.348l1.908,7.882,37.324-9.035-1.908-7.882a.588.588,0,0,0-.381-.42.581.581,0,0,0-.216-.032L641.415,243.69a.6.6,0,0,0-.753.181l-10.4,14.5-3.92,5.468a.083.083,0,0,0-.014.068A.589.589,0,0,0,626.263,264.348Z"
+                                    transform="translate(-575.406 -237.098)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_398"
+                                    data-name="Path 398"
+                                    d="M626.756,263.906a.08.08,0,0,0,.033.051.091.091,0,0,0,.07.014.087.087,0,0,0,.048-.034l.013-.019.2-.285,3.707-5.167,10.395-14.5a.424.424,0,0,1,.537-.129l21.408,11.084.192.1.024.008a.261.261,0,0,1,.044,0,.083.083,0,0,0,.047-.04.085.085,0,0,0-.035-.115l-.026-.014L641.841,243.69a.6.6,0,0,0-.753.181l-10.4,14.5-3.92,5.468A.083.083,0,0,0,626.756,263.906Z"
+                                    transform="translate(-575.831 -237.098)"
+                                    fill="#3f3d56"
+                                  />
+                                  <path
+                                    id="Path_399"
+                                    data-name="Path 399"
+                                    d="M692.787,248.468l.831.092,6.166.683,4.088.453.241.027,5.1-3.984.2-.153,1.2-.941L714.9,241.3l.026-.235L716.45,227.3a.72.72,0,0,0-.635-.794l-20.345-2.254a.72.72,0,0,0-.794.635L693.6,234.6l-.6,5.381-.534,4.814-.247,2.236-.072.648a.721.721,0,0,0,.636.794Z"
+                                    transform="translate(-630.653 -220.856)"
+                                    fill="#e6e6e6"
+                                  />
+                                  <path
+                                    id="Path_400"
+                                    data-name="Path 400"
+                                    d="M725.812,288.51l8.813.976,3.125.346a1.057,1.057,0,0,0,.233-2.1L734.1,287.3l-8.05-.893a1.058,1.058,0,1,0-.233,2.1Z"
+                                    transform="translate(-658.087 -272.959)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_401"
+                                    data-name="Path 401"
+                                    d="M723.065,312.684c.023,0,.046.008.069.01l10.23,1.133,1.708.19a1.058,1.058,0,1,0,.232-2.1l-2.47-.273-8.1-.9-1.364-.151a1.057,1.057,0,0,0-.3,2.091Z"
+                                    transform="translate(-655.842 -293.234)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_402"
+                                    data-name="Path 402"
+                                    d="M719.637,336.632a1.057,1.057,0,0,0,.789.505l4.193.464,7.468.827h0l.239.027,1.2-.941a1.042,1.042,0,0,0,0-.215,1.06,1.06,0,0,0-.935-.941l-1.037-.115-4.115-.455-2.961-.328-3.825-.424a1.057,1.057,0,0,0-1.021,1.6Z"
+                                    transform="translate(-653.572 -313.725)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_403"
+                                    data-name="Path 403"
+                                    d="M751.981,259.036l2.193.243.969.108,1.463.162a1.058,1.058,0,1,0,.233-2.1l-4.623-.512a1.057,1.057,0,1,0-.234,2.1Z"
+                                    transform="translate(-680.026 -248.25)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_404"
+                                    data-name="Path 404"
+                                    d="M645.839,276.6l2.673,11.043,4.462.848,4.127.786,4.428.843,1.415.269a.594.594,0,0,0,.475-.115l1.135-.887.719-.561,5.1-3.984-3.243-13.4a.711.711,0,0,0-.2-.349.719.719,0,0,0-.667-.181l-19.9,4.816A.719.719,0,0,0,645.839,276.6Z"
+                                    transform="translate(-591.814 -259.961)"
+                                    fill="#4b33f7"
+                                  />
+                                  <path
+                                    id="Path_405"
+                                    data-name="Path 405"
+                                    d="M683.71,339.1a1.058,1.058,0,0,0,1.276.779l11.674-2.826a1.059,1.059,0,0,0,.779-1.276.336.336,0,0,0-.011-.04,1.057,1.057,0,0,0-1.265-.739l-11.674,2.826A1.058,1.058,0,0,0,683.71,339.1Z"
+                                    transform="translate(-623.555 -313.674)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_406"
+                                    data-name="Path 406"
+                                    d="M690.082,362.029l4.127.786,8.743-2.117a1.057,1.057,0,1,0-.5-2.055l-11.674,2.826a1.05,1.05,0,0,0-.606.406A1.073,1.073,0,0,0,690.082,362.029Z"
+                                    transform="translate(-628.922 -333.498)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_407"
+                                    data-name="Path 407"
+                                    d="M743.008,386.019l1.415.269a.594.594,0,0,0,.475-.115l1.135-.887Z"
+                                    transform="translate(-673.292 -355.859)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_408"
+                                    data-name="Path 408"
+                                    d="M698.26,311.448a1.058,1.058,0,0,0,1.276.779l4.522-1.095a1.059,1.059,0,0,0,.779-1.276,1.046,1.046,0,0,0-.195-.4,1.058,1.058,0,0,0-1.082-.377l-4.522,1.095A1.057,1.057,0,0,0,698.26,311.448Z"
+                                    transform="translate(-635.753 -291.944)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_409"
+                                    data-name="Path 409"
+                                    d="M640.693,324.682l4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm13.23-4.614.043.178.2-.153Zm-13.23,4.614,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm0,0,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm-14.43-2.067,5,20.645a.593.593,0,0,0,.715.436l36.173-8.757a.593.593,0,0,0,.436-.715l-5-20.645a.588.588,0,0,0-.381-.419.581.581,0,0,0-.216-.032.559.559,0,0,0-.245.064.517.517,0,0,0-.1.061l-2.969,2.318-4.311,3.368-1.444,1.128h0l-5.3,4.135-.876.685-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843-4.433-.843-9.709-1.848a.58.58,0,0,0-.25.005.593.593,0,0,0-.289.167.667.667,0,0,0-.08.105A.589.589,0,0,0,626.263,322.615Zm14.43,2.067,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm0,0,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm0,0,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Z"
+                                    transform="translate(-575.406 -295.365)"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    id="Path_410"
+                                    data-name="Path 410"
+                                    d="M640.693,324.682l4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm13.23-4.614.043.178.2-.153Zm-13.23,4.614,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm0,0,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm-14.2-2.5.022.016c0-.006.01-.011.015-.018a.427.427,0,0,1,.386-.124l9.649,1.835,4.127.786,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843-4.433-.843-9.709-1.848a.58.58,0,0,0-.25.005Zm-.232.429,5,20.645a.593.593,0,0,0,.715.436l36.173-8.757a.593.593,0,0,0,.436-.715l-5-20.645a.588.588,0,0,0-.381-.419.581.581,0,0,0-.216-.032.559.559,0,0,0-.245.064.517.517,0,0,0-.1.061l-2.969,2.318-4.311,3.368-1.444,1.128h0l-5.3,4.135-.876.685-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843-4.433-.843-9.709-1.848a.58.58,0,0,0-.25.005.593.593,0,0,0-.289.167.667.667,0,0,0-.08.105A.589.589,0,0,0,626.263,322.615Zm.165-.04a.42.42,0,0,1,.075-.354.055.055,0,0,1,.015-.019c0-.006.01-.011.015-.018a.427.427,0,0,1,.386-.124l9.649,1.835,4.127.786,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887.718-.561,5.1-3.985.2-.153,1.2-.94,4.287-3.348,3.1-2.42a.422.422,0,0,1,.16-.077.326.326,0,0,1,.049-.008.258.258,0,0,1,.044,0,.433.433,0,0,1,.146.024.424.424,0,0,1,.273.3l5,20.645a.423.423,0,0,1-.312.512l-36.173,8.757a.423.423,0,0,1-.51-.313Zm14.265,2.107,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm0,0,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Zm0,0,4.429.843,1.415.269a.6.6,0,0,0,.475-.115l1.136-.887-.4.1-.842.656a.426.426,0,0,1-.339.082l-1.047-.2-4.429-.843Z"
+                                    transform="translate(-575.406 -295.365)"
+                                    fill="#3f3d56"
+                                  />
+                                  <path
+                                    id="Path_411"
+                                    data-name="Path 411"
+                                    d="M826.938,408.826a1.314,1.314,0,0,1,.967-1.584l4.565-1.105a1.312,1.312,0,0,1,.618,2.551l-4.565,1.105A1.314,1.314,0,0,1,826.938,408.826Z"
+                                    transform="translate(-743.623 -373.308)"
+                                    fill="#4b33f7"
+                                  />
+                                  <circle
+                                    id="Ellipse_67"
+                                    data-name="Ellipse 67"
+                                    cx="1.132"
+                                    cy="1.132"
+                                    r="1.132"
+                                    transform="translate(31.73 29.422)"
+                                    fill="#fff"
+                                  />
+                                </svg>
+
+                                <span class="vstack gap-narrow mt-nnarrow">
+                                  <b class="fw-bold text-gray-900">
+                                    Email Collecting
+                                  </b>
+                                  <span class="fw-normal text-gray-900">
+                                    Start Guiding Your Visitors Better Today.
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                            <!-- <li>
+                              <a
+                                class="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                                href="features.html"
+                              >
+                                <i
+                                  class="icon-1 unicon-chart-venn-diagram fw-bold text-primary dark:text-secondary"
+                                ></i>
+                                <span class="vstack gap-narrow mt-nnarrow">
+                                  <b class="fw-bold text-gray-900">
+                                    Collaboration
+                                  </b>
+                                  <span class="fw-normal text-gray-900">
+                                    Assign tasks, share files, and communicate
+                                    with your team.
+                                  </span>
+                                </span>
+                              </a>
+                            </li> -->
+                          </ul>
+                        </div>
+                        <div>
+                          <div
+                            class="vstack gap-2 p-3 h-100 bg-gray-25 dark:bg-gray-300 dark:bg-opacity-5"
+                          >
+                            <div
+                              class="featured-image panel"
+                              data-uc-lightbox="video-autoplay: true;"
+                            >
+                              <figure
+                                class="featured-image m-0 rounded ratio ratio-3x2 rounded-1-5 uc-transition-toggle overflow-hidden"
+                              >
+                                <img
+                                  class="media-cover image uc-transition-scale-up uc-transition-opaque"
+                                  src="https://mintlify.s3-us-west-1.amazonaws.com/globres/images/mockups/inzone-light.png"
+                                  alt="Image"
+                                />
+                              </figure>
+                              <button
+                                class="btn btn-md btn-alt-primary p-0 w-32px h-32px position-absolute bottom-0 ltr:start-0 rtl:end-0 m-2"
+                                ><i class="icon-1 unicon-play-filled-alt"></i
+                              ></button>
+                              <a
+                                href="../assets/images/media/lexend_vid.webm"
+                                data-caption="Easy project managment of any complexity."
+                                data-attrs="width: 640; height: 480;"
+                                class="position-cover"
+                                role="button"
+                              ></a>
+                            </div>
+                            <div class="vstack justify-between gap-2">
+                              <div class="vstack gap-1">
+                                <h5 class="h6 m-0">
+                                  The most user-friendly popup builder ever made
+                                </h5>
+                                <!-- <p class="fs-7 opacity-70">
+                                  Inzone is made for marketers to get more leads
+                                  and sales—without waiting for their design or
+                                  development teams.
+                                </p> -->
+                              </div>
+                              <a
+                                class="btn btn-sm btn-primary"
+                                href="product-demo.html"
+                              >
+                                Start free trial
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
                     <a href="index.html#features">Features</a>
                   </li>
                   <li>
                     <a href="index.html#how_it_works">How it works</a>
                   </li>
-                  <li><a href="index.html#pricing">Pricing</a></li>
+                  <!-- <li><a href="index.html#pricing">Pricing</a></li> -->
                   <li><a href="index.html#clients_feedback">Reviews</a></li>
                   <!-- <li><a href="index.html#insights">Insights</a></li> -->
                   <li
@@ -1646,7 +1603,7 @@
                           more!
                         </p>
                       </div>
-                      <a
+                      <!-- <a
                         href="index.html#"
                         class="btn btn-sm btn-secondary text-primary px-2 mt-2"
                       >
@@ -1654,7 +1611,7 @@
                         <i
                           class="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180"
                         ></i>
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </div>
@@ -1694,7 +1651,7 @@
                           information.
                         </p>
                       </div>
-                      <a
+                      <!-- <a
                         href="index.html#"
                         class="btn btn-sm btn-secondary text-primary px-2 mt-2"
                       >
@@ -1702,7 +1659,7 @@
                         <i
                           class="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180"
                         ></i>
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </div>
@@ -2492,7 +2449,7 @@
       </div>
       <!-- Section start -->
       <div id="key_features" class="key-features section panel overflow-hidden">
-        <div class="section-outer panel py-6 lg:py-8 xl:py-10">
+        <div class="section-outer panel py-4 lg:py-6 xl:py-6">
           <div class="container xl:max-w-lg">
             <div class="section-inner panel vstack gap-4 lg:gap-6 xl:gap-8">
               <div
@@ -2660,7 +2617,7 @@
                     >
                       <a
                         class="uc-link w-40px md:w-48px lg:w-80px h-40px md:h-48px lg:h-80px rounded-circle cstack bg-secondary dark:bg-gray-800 text-primary dark:text-secondary"
-                        href="page-features.html"
+                        href="features.html"
                       >
                         <i
                           class="icon icon-narrow md:icon-1 unicon-arrow-up-right fw-bold rtl:-rotate-90"
@@ -3145,7 +3102,8 @@
                             >
                           </div>
                           <p class="desc lg:fs-5">
-                            Build a <b>hobby site</b> with every basic features.
+                            Build a <b>hobby banner</b> with every basic
+                            features.
                           </p>
                           <a
                             class="btn btn-md lg:btn-lg btn-secondary w-100 mt-2"
@@ -3221,7 +3179,7 @@
                             >
                           </div>
                           <p class="desc lg:fs-5">
-                            Build <b>one website</b> with every pro feature.
+                            Build <b>one brand</b> with every pro feature.
                           </p>
                           <a
                             class="btn btn-md lg:btn-lg btn-primary w-100 mt-2"
@@ -3290,7 +3248,7 @@
                             >
                           </div>
                           <p class="desc lg:fs-5">
-                            Build <b>unlimited websites</b> with every pro
+                            Build <b>unlimited banners</b> with every pro
                             feature
                           </p>
                           <a
@@ -5251,5 +5209,18 @@
         setDarkMode(0);
       }
     </script>
+    <!-- <script src="https://test-api.globres.io/RealRate/35252/BB/RR_6071f2c732d9c/DE?mobile=1"></script> -->
+
+    <!-- RealRate script ( English ) -->
+    <!-- <script
+      src="https://test-api.globres.io/RealRate/60669/BB/EN?mobile=1"
+      type="text/javascript"
+    ></script> -->
+    <!-- End RealRate script -->
+
+    <!-- <script
+      src="https://test-api.globres.io/RealRate/35252/BB/RR_6071f2c732d9c/FR?mobile=1"
+      type="text/javascript"
+    ></script> -->
   </body>
 </html>
